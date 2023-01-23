@@ -1,0 +1,34 @@
+:root {
+  --background-main-primary: rgb(18, 18, 20);
+
+  --background-header-primary: rgb(51, 51, 58)
+
+  --font-color-primary: rgb(225, 225, 230);
+}
+
+
+.agenda {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(225, 225, 230);
+  padding: 4rem 1rem 0.5rem;
+}
+
+.wrapperAgenda {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.agendaData {
+  border-top: 1px solid rgb(225, 225, 230);
+  padding: 0.25rem 1rem;
+}
+
+.agenda > div:nth-child(2) .agendaData {
+  border-top: 0;
+}
