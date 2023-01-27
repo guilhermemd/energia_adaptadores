@@ -37,6 +37,7 @@ const Catalog = () => {
             />
             <div className="catalog__product__name">{item.name}</div>
             <div className="catalog__product__price">{item.price}</div>
+            <button className="catalog__product__details">Ver Detalhes</button>
           </div>
         ))}
       </div>
