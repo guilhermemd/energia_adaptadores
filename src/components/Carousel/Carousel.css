@@ -66,3 +66,19 @@
     background: rgb(225, 225, 230);
   }
 } */
+
+.mySwiper div:first-child {
+  padding-left: 0.5rem;
+}
+
+.product__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.produtos__home {
+  width: 100%;
+  height: 253px;
+  object-fit: cover;
+  border-radius: 1rem;
+}

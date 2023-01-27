@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Te Abs Tradicional",
+      "price": 2.43
+    },
+    {
+      "name": "Te Adaptador 10 20 Quadrado",
+      "price": 2.43
+    },
+    {
+      "name": "Te Adaptador 10 20 Sextavado",
+      "price": 2.43
+    },
+    {
+      "name": "Te adaptador 10 20A Tradicional",
+      "price": 2.43
+    },
+    {
+      "name": "Te Articulado",
+      "price": 2.43
+    },
+    {
+      "name": "Te Cubo Colorido Original",
+      "price": 2.43
+    },
+    {
+      "name": "Te Adaptador10 20A Coração",
+      "price": 2.43
+    },
+    {
+      "name": "Te Parafusado Inverso Branco Preto",
+      "price": 2.43
+    },
+    {
+      "name": "Te parafusado Simples",
+      "price": 2.43
+    }
+  ]
+}

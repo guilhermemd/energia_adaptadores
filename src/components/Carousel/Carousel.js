@@ -30,7 +30,13 @@ const slides = [
 const Carousel = () => {
   return (
     <Swiper
-      slidesPerView={3.5}
+      breakpoints={{
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3.5,
+        },
+      }}
+      slidesPerView={2.5}
       spaceBetween={8}
       slidesPerGroup={1}
       loop={true}
@@ -39,16 +45,25 @@ const Carousel = () => {
         clickable: true,
       }}
       navigation={true}
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      // }}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <img src={slide} key={index} alt={index} />
+          <div className="product__container">
+            <img
+              src={slide}
+              key={index}
+              alt={index}
+              className="produtos__home"
+            />
+            <div className="product__name">Nome do produto</div>
+            <div className="product__price">R$2,48</div>
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>
