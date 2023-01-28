@@ -1,5 +1,4 @@
 .main {
-  padding-top: 48px;
   color: var(--font-color-primary);
   max-width: 1024px;
   margin: 0 auto;
@@ -8,4 +7,6 @@
 .banner {
   width: 100vw;
   padding-top: 53px;
+  max-width: 1600px;
+  margin: auto;
 }

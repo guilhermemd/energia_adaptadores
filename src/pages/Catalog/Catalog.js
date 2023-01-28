@@ -39,14 +39,19 @@ const Catalog = () => {
               alt={index}
               className="catalog__product__img"
             />
-            <div className="catalog__product__name">{item.name}</div>
-            <div className="catalog__product__price">{item.price}</div>
-            <button
-              onClick={() => history(`/product/${item.id}`)}
-              className="catalog__product__details"
-            >
-              Ver Detalhes
-            </button>
+            <div className="catalog__product__details">
+              <div className="catalog__product__name">{item.name}</div>
+              <div className="catalog__product__unidad">
+                Valor por unidade:{" "}
+              </div>
+              <div className="catalog__product__price">R$ {item.price}</div>
+              <button
+                onClick={() => history(`/product/${item.id}`)}
+                className="catalog__product__btn"
+              >
+                Ver Detalhes
+              </button>
+            </div>
           </div>
         ))}
       </div>

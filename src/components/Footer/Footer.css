@@ -27,16 +27,14 @@
   transition: 0.4s;
 }
 
-.logoBand {
-  display: none;
-  background: rgb(225, 225, 230);
+.logo {
+  background: var(--background-header-primary);
   width: 280px;
 }
 
 .footer__contact__wrapper,
 .footer__social__wrapper {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 1rem;
 
   align-items: center;
@@ -45,9 +43,21 @@
 }
 
 .footer__contact__wrapper img,
-.footer__social__wrapper img {
+.footer__social__wrapper img,
+.footer__contact__email img {
   width: 2rem;
   filter: drop-shadow(0px 0px 12px #e1e1e6);
+}
+
+.footer__contact__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact__email__wrapper {
+  display: flex;
+  gap: 1rem;
 }
 
 @media (min-width: 600px) {

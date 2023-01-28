@@ -2,7 +2,7 @@ import "./Main.css";
 import banner from "../../img/banner.png";
 // import Carousel from "../../components/Carousel";
 // import News from "../../components/News";
-import Catalog from "../../components/Catalog";
+import Catalog from "../Catalog";
 const Main = () => {
   return (
     <>

@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-// import { useState } from "react";
 
 import "./ProductDetails.css";
 import data from "../../Mock/produtos.json";
@@ -26,22 +25,26 @@ const slides = [
   t_parafusado_simples,
 ];
 
-const { products } = data;
 const ProductDetails = () => {
+  const { products } = data;
   const params = useParams();
-  const product = products.find(({ id }) => params.id);
 
   return (
     <div className="productDetails">
       <div className="productDetails__wrapper">
         <div className="productDetails__carousel">
-          <img src={slides[product.id]} alt={product.id} />
+          <img src={slides[params.id]} alt={products[params.id].id} />
         </div>
-        <div>
-          <div>{product.name}</div>
-          <div>{product.price}</div>
-          <button>Adicionar ao carrinho</button>
+        <div className="productDetails__infos">
+          <div className="productDetails__name">{products[params.id].name}</div>
+          <div className="productDetails__price">
+            Valor por unidade R$ {products[params.id].price}
+          </div>
+          <button className="productDetails__btn">Adicionar ao carrinho</button>
         </div>
+      </div>
+      <div className="productDetails__description">
+        {products[params.id].description}
       </div>
     </div>
   );

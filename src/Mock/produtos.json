@@ -2,46 +2,55 @@
   "products": [
     {
       "name": "Te Abs Tradicional",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 0
     },
     {
       "name": "Te Adaptador 10 20 Quadrado",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 1
     },
     {
       "name": "Te Adaptador 10 20 Sextavado",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 2
     },
     {
       "name": "Te adaptador 10 20A Tradicional",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 3
     },
     {
       "name": "Te Articulado",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 4
     },
     {
       "name": "Te Cubo Colorido Original",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 5
     },
     {
       "name": "Te Adaptador10 20A Coração",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 6
     },
     {
       "name": "Te Parafusado Inverso Branco Preto",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 7
     },
     {
       "name": "Te parafusado Simples",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
       "id": 8
     }
