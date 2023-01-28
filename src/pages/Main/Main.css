@@ -1,6 +1,6 @@
 .main {
   padding-top: 48px;
-  color: #fff;
+  color: var(--font-color-primary);
   max-width: 1024px;
   margin: 0 auto;
 }

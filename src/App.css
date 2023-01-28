@@ -43,11 +43,11 @@ h6 {
 }
 
 :root {
-  --background-main-primary: rgb(18, 18, 20);
+  --background-main-primary: #f4f4f4;
 
-  --background-header-primary: rgb(51, 51, 58);
+  --background-header-primary: #ffee0c;
 
-  --font-color-primary: rgb(225, 225, 230);
+  --font-color-primary: #1e1e1e;
 }
 
 .App {

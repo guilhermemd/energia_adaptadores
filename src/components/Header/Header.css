@@ -1,5 +1,5 @@
 .header {
-  background-color: #33333a;
+  background-color: var(--background-header-primary);
   padding: 0.5rem 1rem;
   position: fixed;
   z-index: 100;
@@ -27,7 +27,7 @@
 
 .sideNavMenu {
   position: absolute;
-  background-color: #33333a;
+  background-color: var(--background-header-primary);
   width: 100vw;
   padding: 0.5rem 1.25rem;
   border-radius: 0.25rem;
@@ -42,7 +42,7 @@
 
 .sideNavMenuOptions {
   all: unset;
-  color: white;
+  color: var(--font-color-primary);
   font-size: 1.25rem;
   cursor: pointer;
 }
