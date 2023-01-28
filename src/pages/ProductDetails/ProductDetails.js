@@ -1,6 +1,7 @@
-import "./Catalog.css";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+// import { useState } from "react";
 
+import "./ProductDetails.css";
 import data from "../../Mock/produtos.json";
 
 import t_abs_tradicional from "../../img/produtos/t_abs_tradicional.jpeg";
@@ -26,32 +27,24 @@ const slides = [
 ];
 
 const { products } = data;
+const ProductDetails = () => {
+  const params = useParams();
+  const product = products.find(({ id }) => params.id);
 
-const Catalog = () => {
-  const history = useNavigate();
   return (
-    <div className="catalog">
-      <div className="catalog__wrapper">
-        {products.map((item, index) => (
-          <div className="catalog__card" key={index}>
-            <img
-              src={slides[index]}
-              alt={index}
-              className="catalog__product__img"
-            />
-            <div className="catalog__product__name">{item.name}</div>
-            <div className="catalog__product__price">{item.price}</div>
-            <button
-              onClick={() => history(`/product/${item.id}`)}
-              className="catalog__product__details"
-            >
-              Ver Detalhes
-            </button>
-          </div>
-        ))}
+    <div className="productDetails">
+      <div className="productDetails__wrapper">
+        <div className="productDetails__carousel">
+          <img src={slides[product.id]} alt={product.id} />
+        </div>
+        <div>
+          <div>{product.name}</div>
+          <div>{product.price}</div>
+          <button>Adicionar ao carrinho</button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Catalog;
+export default ProductDetails;
