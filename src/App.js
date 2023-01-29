@@ -5,6 +5,7 @@ import Provider from "./context/Provider";
 
 import Main from "./pages/Main";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Home" element={<Main />} />
             <Route path="product/:id" element={<ProductDetails />} />
             <Route path="Produtos" element={<Catalog />} />
+            <Route path="carrinho" element={<Cart />} />
           </Routes>
         </Provider>
       </Router>

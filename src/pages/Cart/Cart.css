@@ -1,0 +1,18 @@
+.cart {
+  padding-top: 5rem;
+}
+
+.cart__wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cart__product {
+  border: 1px solid black;
+}
+
+.cart__order {
+  height: 100px;
+  margin: 2rem 0;
+}

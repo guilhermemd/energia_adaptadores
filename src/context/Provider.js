@@ -9,9 +9,15 @@ function Provider({ children }) {
     setCart([...cart, product]);
   };
 
+  const deleteProductCart = (productId) => {
+    const deletedProduct = cart.filter((item) => item.id !== productId);
+
+    setCart(deletedProduct);
+  };
+
   console.log({ cart });
 
-  const contextValue = { addProductToCart };
+  const contextValue = { cart, addProductToCart, deleteProductCart };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
 }
