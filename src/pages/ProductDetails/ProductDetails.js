@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import Context from "../../context/Context";
 
@@ -32,7 +32,9 @@ const ProductDetails = () => {
   const { products } = data;
   const params = useParams();
   const { addProductToCart } = useContext(Context);
+  const [activeDropdown, setActiveDropdown] = useState(false);
 
+  console.log({ activeDropdown });
   const productToCart = products[params.id];
 
   return (
@@ -43,6 +45,16 @@ const ProductDetails = () => {
         </div>
         <div className="productDetails__infos">
           <div className="productDetails__name">{products[params.id].name}</div>
+          <ul
+            onClick={() => setActiveDropdown(!activeDropdown)}
+            className="productDetails__quantity"
+          >
+            {products[params.id].quantity.map((item) => (
+              <li className={activeDropdown ? "showDropdown" : "hideDropdown"}>
+                {item}
+              </li>
+            ))}
+          </ul>
           <div className="productDetails__price">
             Valor por unidade R$ {products[params.id].price}
           </div>

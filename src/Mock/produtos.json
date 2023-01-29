@@ -4,54 +4,64 @@
       "name": "Te Abs Tradicional",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [10000, 5000, 3000, 1000],
       "id": 0
     },
     {
       "name": "Te Adaptador 10 20 Quadrado",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 1
     },
     {
       "name": "Te Adaptador 10 20 Sextavado",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 2
     },
     {
       "name": "Te adaptador 10 20A Tradicional",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 3
     },
     {
       "name": "Te Articulado",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
+
       "id": 4
     },
     {
       "name": "Te Cubo Colorido Original",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 5
     },
     {
       "name": "Te Adaptador10 20A Coração",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 6
     },
     {
       "name": "Te Parafusado Inverso Branco Preto",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 7
     },
     {
       "name": "Te parafusado Simples",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiaLorem ipsum dolor sit amet consectetur adipisicing eli.",
       "price": 2.43,
+      "quantity": [1000, 3000, 5000, 10000],
       "id": 8
     }
   ]
