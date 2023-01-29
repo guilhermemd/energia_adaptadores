@@ -1,9 +1,13 @@
+import { useContext } from "react";
+import Context from "../../context/Context";
 import "./Main.css";
 import banner from "../../img/banner.png";
-// import Carousel from "../../components/Carousel";
-// import News from "../../components/News";
+
 import Catalog from "../Catalog";
 const Main = () => {
+  const { msg } = useContext(Context);
+
+  console.log({ msg });
   return (
     <>
       <img src={banner} alt="banner" className="banner" />

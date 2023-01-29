@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
+import Provider from "./context/Provider";
+
 import Main from "./pages/Main";
 import ProductDetails from "./pages/ProductDetails";
 
@@ -12,13 +14,15 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/Home" element={<Main />} />
-          <Route path="product/:id" element={<ProductDetails />} />
-          <Route path="Produtos" element={<Catalog />} />
-        </Routes>
+        <Provider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/Home" element={<Main />} />
+            <Route path="product/:id" element={<ProductDetails />} />
+            <Route path="Produtos" element={<Catalog />} />
+          </Routes>
+        </Provider>
       </Router>
       <Footer />
     </div>
