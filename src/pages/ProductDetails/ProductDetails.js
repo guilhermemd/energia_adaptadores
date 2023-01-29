@@ -1,4 +1,7 @@
 import { useParams } from "react-router-dom";
+import { useContext } from "react";
+
+import Context from "../../context/Context";
 
 import "./ProductDetails.css";
 import data from "../../Mock/produtos.json";
@@ -28,6 +31,9 @@ const slides = [
 const ProductDetails = () => {
   const { products } = data;
   const params = useParams();
+  const { addProductToCart } = useContext(Context);
+
+  const productToCart = products[params.id];
 
   return (
     <div className="productDetails">
@@ -40,7 +46,12 @@ const ProductDetails = () => {
           <div className="productDetails__price">
             Valor por unidade R$ {products[params.id].price}
           </div>
-          <button className="productDetails__btn">Adicionar ao carrinho</button>
+          <button
+            onClick={() => addProductToCart(productToCart)}
+            className="productDetails__btn"
+          >
+            Adicionar ao carrinho
+          </button>
         </div>
       </div>
       <div className="productDetails__description">
