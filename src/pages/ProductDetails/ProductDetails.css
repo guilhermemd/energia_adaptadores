@@ -61,6 +61,16 @@
   display: none;
 }
 
+.arrowDown {
+  width: 1rem;
+  transition: 0.3s;
+}
+
+.arrowUp {
+  width: 1rem;
+  transform: scaleY(-1);
+  transition: 0.3s;
+}
 /* DROPDOWN */
 
 @media (min-width: 630px) {

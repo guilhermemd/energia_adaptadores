@@ -6,6 +6,8 @@ import Context from "../../context/Context";
 import "./ProductDetails.css";
 import data from "../../Mock/produtos.json";
 
+import arrow from "../../img/icons/arrow-down.svg";
+
 import t_abs_tradicional from "../../img/produtos/t_abs_tradicional.jpeg";
 import t_adaptador_10_20_quadrado from "../../img/produtos/t_adaptador_10_20_quadrado.jpeg";
 import t_adaptador_10_20_sextavado from "../../img/produtos/t_adaptador_10_20_sextavado.jpeg";
@@ -54,7 +56,11 @@ const ProductDetails = () => {
           >
             <div className="productDetails__dropdownHead">
               <div>{quantityPicked}</div>
-              <div>Arrow</div>
+              <img
+                src={arrow}
+                alt="arrow"
+                className={activeDropdown ? "arrowUp" : "arrowDown"}
+              />
             </div>
             <div className={activeDropdown ? "showDropdown" : "hideDropdown"}>
               {products[params.id].quantity.map((item) => (
