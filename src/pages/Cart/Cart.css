@@ -12,20 +12,6 @@
   border: 1px solid black;
 }
 
-.productDetails__quantity {
-  position: relative;
-}
-
-.hideDropdown:not(:first-child) {
-  display: none;
-}
-
-/* .showDropdown {
-  position: absolute;
-  display: flex;
-  top: 100;
-} */
-
 .cart__order {
   height: 100px;
   margin: 2rem 0;

@@ -22,12 +22,46 @@
   font-weight: bold;
   text-align: center;
 }
-.productDetails__btn {
+.productDetails__addToCart {
   all: unset;
   border-radius: 1rem;
   padding: 0.25rem 1rem;
   background-color: var(--btn-color-primary);
 }
+
+/* DROPDOWN */
+
+.productDetails__quantity {
+  position: relative;
+  display: inline-block;
+}
+
+.productDetails__dropdownHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 176px;
+  background: red;
+  padding: 0.25rem 0.5rem;
+  background-color: #f9f9f9;
+  border: 1px black solid;
+}
+
+.showDropdown {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 176px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.hideItems {
+  display: none;
+}
+
+/* DROPDOWN */
 
 @media (min-width: 630px) {
   .productDetails__wrapper {

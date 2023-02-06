@@ -33,6 +33,9 @@ const ProductDetails = () => {
   const params = useParams();
   const { addProductToCart } = useContext(Context);
   const [activeDropdown, setActiveDropdown] = useState(false);
+  const [quantityPicked, setQuantityPicked] = useState(
+    products[params.id].quantity[0]
+  );
 
   console.log({ activeDropdown });
   const productToCart = products[params.id];
@@ -45,22 +48,31 @@ const ProductDetails = () => {
         </div>
         <div className="productDetails__infos">
           <div className="productDetails__name">{products[params.id].name}</div>
-          <ul
+          <div
             onClick={() => setActiveDropdown(!activeDropdown)}
             className="productDetails__quantity"
           >
-            {products[params.id].quantity.map((item) => (
-              <li className={activeDropdown ? "showDropdown" : "hideDropdown"}>
-                {item}
-              </li>
-            ))}
-          </ul>
+            <div className="productDetails__dropdownHead">
+              <div>{quantityPicked}</div>
+              <div>Arrow</div>
+            </div>
+            <div className={activeDropdown ? "showDropdown" : "hideDropdown"}>
+              {products[params.id].quantity.map((item) => (
+                <div
+                  onClick={() => setQuantityPicked(item)}
+                  className={activeDropdown ? "showItems" : "hideItems"}
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="productDetails__price">
             Valor por unidade R$ {products[params.id].price}
           </div>
           <button
             onClick={() => addProductToCart(productToCart)}
-            className="productDetails__btn"
+            className="productDetails__addToCart"
           >
             Adicionar ao carrinho
           </button>
